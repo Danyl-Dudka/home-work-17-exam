@@ -2,6 +2,22 @@
   font-family: Space-Grotesk;
   src: url(/fonts/SpaceGrotesk-Regular.ttf);
 }
+@font-face {
+  font-family: Space-Grotesk-Bold;
+  src: url(/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: Space-Grotesk-Medium;
+  src: url(/fonts/SpaceGrotesk-Medium.ttf);
+}
+@font-face {
+  font-family: Space-Grotesk-Light;
+  src: url(/fonts/SpaceGrotesk-Light.ttf);
+}
+@font-face {
+  font-family: Space-Grotesk-Variable;
+  src: url(/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
 .wrapper {
   margin: 0 auto;
   width: 1440px;
@@ -16,15 +32,21 @@ body {
   height: 56px;
 }
 
+.main_navigation img {
+  width: 220px;
+  height: 56px;
+}
+
 .main_navigation {
   display: flex;
   padding: 60px 100px;
+  box-sizing: border-box;
 }
 
 .main_navigation ul {
   display: flex;
   list-style: none;
-  margin-left: 210px;
+  margin-left: 168px;
   font-size: 20px;
   line-height: 28px;
   gap: 40px;
@@ -35,6 +57,7 @@ body {
   width: 232px;
   height: 68px;
   font-size: 20px;
+  line-height: 28px;
   border: 1px solid black;
   border-radius: 14px;
   padding: 20px 35px;
@@ -57,13 +80,19 @@ a:hover {
 }
 
 .info_nav {
+  font-family: Space-Grotesk-Medium;
+  width: 532px;
+  height: 232px;
   font-size: 60px;
-  font-weight: 300;
-  margin-top: 70px;
+  line-height: 76px;
+  font-weight: 100;
+  margin-top: 6px;
 }
 
 .main_description {
-  margin-top: 35px;
+  width: 498px;
+  height: 112px;
+  margin-top: 0px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -74,7 +103,7 @@ a:hover {
   align-items: center;
   width: 264px;
   height: 68px;
-  margin-top: 35px;
+  margin-top: 30px;
   background-color: #191A23;
   border-radius: 20px;
   font-weight: 400;
@@ -90,14 +119,14 @@ a:hover {
 .illustration {
   width: 600px;
   height: 516px;
-  margin-left: 60px;
-  margin-top: 68px;
+  margin-left: 106px;
+  margin-top: 6px;
 }
 
 .company_logo {
   display: flex;
   gap: 96px;
-  margin-top: 100px;
+  margin-top: 72px;
   padding-left: 100px;
   filter: grayscale(100%);
 }
@@ -105,10 +134,12 @@ a:hover {
 .services_info {
   display: flex;
   padding-left: 100px;
-  margin-top: 140px;
+  margin-top: 98px;
+  box-sizing: border-box;
 }
 
 .services_button {
+  font-family: Space-Grotesk-Variable;
   font-size: 40px;
   background-color: #B9FF66;
   box-sizing: border-box;
@@ -120,15 +151,18 @@ a:hover {
 }
 
 .services_descr {
-  margin-top: 46px;
+  width: 580px;
+  height: 46px;
+  margin-top: 42px;
   margin-left: 40px;
   font-size: 18px;
 }
 
 .cards_section_first {
   display: flex;
-  padding-left: 80px;
-  padding-top: 100px;
+  padding-left: 96px;
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .search_engine {
@@ -143,9 +177,10 @@ a:hover {
 .service-label {
   display: inline-block;
   background-color: #B9FF66;
-  padding: 7px 7px;
+  padding-left: 7px;
+  padding-right: 7px;
   border-radius: 7px;
-  margin-left: 50px;
+  margin-left: 48px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -162,20 +197,22 @@ a:hover {
 }
 
 .learn_more_button img {
+  margin-top: 22px;
   width: 42px;
   height: 42px;
 }
 
 .learn_more_button a {
-  margin-left: 15px;
+  margin-top: 16px;
+  margin-left: 14px;
   font-size: 20px;
 }
 
 .first_img_card {
   width: 210px;
   height: 170px;
-  margin-left: 69px;
-  margin-top: 70px;
+  margin-left: 72px;
+  margin-top: 68px;
 }
 
 .pay-per-click {
@@ -191,21 +228,22 @@ a:hover {
 .service-label-second {
   display: inline-block;
   background-color: #FFFFFF;
-  padding: 7px 7px;
   border-radius: 7px;
-  margin-left: 50px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 48px;
   font-size: 30px;
   font-weight: bold;
 }
 
 .service-label-second:first-child {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .cards_section_second {
   display: flex;
-  padding-left: 80px;
-  padding-top: 40px;
+  margin-left: 96px;
+  margin-top: 40px;
 }
 
 .social_media {
@@ -240,12 +278,14 @@ a:hover {
 }
 
 .learn_more_button-gray img {
+  margin-top: 20px;
   width: 42px;
   height: 42px;
 }
 
 .learn_more_button-gray a {
-  margin-left: 15px;
+  margin-top: 16px;
+  margin-left: 14px;
   font-size: 20px;
 }
 
@@ -262,7 +302,7 @@ a:hover {
 .cards_section_third {
   display: flex;
   padding-top: 40px;
-  padding-left: 40px;
+  padding-left: 56px;
 }
 
 .content_creation {
@@ -290,57 +330,77 @@ a:hover {
   width: 1260px;
   height: 348px;
   border-radius: 45px;
-  margin-left: 70px;
+  margin-left: 100px;
   margin-top: 124px;
   background-color: #F3F3F3;
+  position: relative;
 }
 
 .first_descr {
   display: flex;
-  margin-top: 60px;
-  margin-left: 60px;
+  margin-top: 56px;
+  margin-left: 58px;
   font-size: 30px;
   font-weight: bold;
   line-height: 38px;
 }
 
 .second_descr {
-  margin-left: 60px;
+  margin-top: 26px;
+  margin-left: 58px;
   font-size: 18px;
   width: 500px;
 }
 
 .third_descr_btn {
+  margin-top: 24px;
   margin-left: 60px;
   font-size: 20px;
-  width: 288px;
-  height: 68px;
+  width: 218px;
+  height: 28px;
   border-radius: 14px;
   background-color: #191A23;
   color: #FFFFFF;
   padding: 20px 35px;
 }
 
+.image_wrapper {
+  position: relative;
+}
+
+.image_wrapper img {
+  position: absolute;
+  top: -30px;
+  left: 186px;
+  width: 360px;
+  height: 394px;
+}
+
 .case_studies {
   display: flex;
-  padding-top: 164px;
-  padding-left: 70px;
+  padding-top: 122px;
+  padding-left: 100px;
+  box-sizing: border-box;
 }
 
 .case_s {
-  width: 266px;
-  height: 52px;
+  font-family: Space-Grotesk-Variable;
+  width: 252px;
+  height: 50px;
   background-color: #B9FF66;
   font-size: 40px;
-  font-weight: bold;
-  padding: 7px 7px;
+  font-weight: 500;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 7px;
 }
 
 .case_descr {
   width: 580px;
   height: 46px;
   font-size: 18px;
-  margin-left: 40px;
+  margin-top: 14px;
+  margin-left: 36px;
 }
 
 .black_label {
@@ -349,8 +409,8 @@ a:hover {
   height: 326px;
   background-color: #191A23;
   border-radius: 45px;
-  margin-top: 80px;
-  margin-left: 80px;
+  margin-top: 46px;
+  margin-left: 100px;
   position: relative;
 }
 
@@ -358,32 +418,35 @@ a:hover {
   width: 286px;
   color: #FFFFFF;
   font-size: 18px;
+  margin-top: 0px;
 }
 
 .learn_more_button_green {
-  margin-top: 20px;
+  margin-top: 14px;
   color: #B9FF66;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .first_block_info img {
-  margin-left: 15px;
+  margin-top: 4px;
+  margin-left: 6px;
   width: 20px;
   height: 20px;
 }
 
 .first_block {
-  margin: 70px 60px;
-  width: 410px;
+  margin: 72px 60px;
+  width: 428px;
   height: 186px;
   border-right: 1px solid #F3F3F3;
+  font-size: 18px;
 }
 
 .second_block {
-  width: 354px;
+  width: 436px;
   height: 186px;
-  margin-top: 70px;
-  border-right: 1px solid #F3F3F3;
+  margin-top: 54px;
+  font-size: 18px;
 }
 
 .second_block_info p {
@@ -392,24 +455,61 @@ a:hover {
   color: #FFFFFF;
 }
 
+.learn_more_button_green-2 {
+  margin-top: 12 px;
+  color: #B9FF66;
+  font-size: 20px;
+}
+
+.learn_more_button_green-2 img {
+  margin-top: 4px;
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.just_border {
+  height: 186px;
+  position: absolute;
+  right: 410px;
+  top: 72px;
+  border: 1px solid #F3F3F3;
+}
+
 .third_block {
-  margin: 64px 70px;
+  margin: 54px 62px;
 }
 
 .third_block_info p {
   width: 286px;
   height: 138px;
   color: #FFFFFF;
+  font-size: 18px;
+}
+
+.learn_more_button_green-3 {
+  margin-top: 12 px;
+  color: #B9FF66;
+  font-size: 20px;
+}
+
+.learn_more_button_green-3 img {
+  margin-top: 6px;
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
 }
 
 .work_proc {
   display: flex;
   align-items: center;
-  padding-top: 140px;
-  padding-left: 80px;
+  padding-top: 104px;
+  padding-left: 96px;
 }
 
 .work_proc_btn {
+  font-family: Space-Grotesk-Variable;
+  font-weight: 500;
   width: 412px;
   height: 52px;
   font-size: 40px;
@@ -420,14 +520,14 @@ a:hover {
 
 .work_proc_descr {
   width: 292px;
-  height: 46px;
+  height: 50px;
   font-size: 18px;
-  margin-left: 40px;
+  margin-left: 32px;
 }
 
 .beauty_labels {
-  padding-top: 80px;
-  padding-left: 80px;
+  padding-top: 40px;
+  padding-left: 100px;
 }
 
 .first_label {
@@ -437,13 +537,13 @@ a:hover {
   border: 1px solid #191A23;
   border-radius: 45px;
   box-sizing: border-box;
-  padding: 42px 60px;
+  padding: 40px 56px;
 }
 
 .first_label_descr {
   display: flex;
   width: 1114px;
-  height: 130px;
+  height: 104px;
   border-bottom: 1px solid #191A23;
 }
 
@@ -461,10 +561,12 @@ a:hover {
 .first_label img {
   width: 58px;
   height: 58px;
-  margin-left: 750px;
+  margin-top: 8px;
+  margin-left: 784px;
 }
 
 .first_label_bottom p {
+  padding-top: 12px;
   width: 1114px;
   height: 60px;
   font-size: 18px;
@@ -478,8 +580,8 @@ a:hover {
   border: 1px solid #191A23;
   border-radius: 45px;
   margin-top: 30px;
-  padding-left: 60px;
-  padding-top: 42px;
+  padding-left: 58px;
+  padding-top: 36px;
 }
 
 .inside_sizing {
@@ -496,59 +598,69 @@ a:hover {
 .image_label {
   width: 58px;
   height: 58px;
-  margin-left: 414px;
+  margin-left: 426px;
+  margin-top: 10px;
 }
 
 .image_label_03 {
   width: 58px;
   height: 58px;
-  margin-left: 720px;
+  margin-left: 730px;
+  margin-top: 8px;
 }
 
 .image_label_04 {
   width: 58px;
   height: 58px;
-  margin-left: 534px;
+  margin-left: 544px;
+  margin-top: 8px;
 }
 
 .image_label_05 {
   width: 58px;
   height: 58px;
-  margin-left: 508px;
+  margin-left: 516px;
+  margin-top: 8px;
 }
 
 .image_label_06 {
   width: 58px;
   height: 58px;
-  margin-left: 614px;
+  margin-left: 622px;
+  margin-top: 8px;
 }
 
 .team_label {
   display: flex;
-  margin-top: 140px;
-  margin-left: 80px;
+  margin-top: 92px;
+  margin-left: 96px;
 }
 
 .team_btn {
+  font-family: Space-Grotesk-Variable;
+  font-weight: 500;
   width: 116px;
   height: 52px;
   background-color: #B9FF66;
   font-size: 40px;
   box-sizing: border-box;
+  border-radius: 7px;
   padding-bottom: 7px;
   padding-left: 7px;
 }
 
 .team_descr {
+  width: 474px;
+  height: 46px;
   font-size: 18px;
-  padding-top: 26px;
+  padding-top: 22px;
   margin-left: 40px;
 }
 
 .first_team_labels {
   display: flex;
-  padding-top: 80px;
-  padding-left: 80px;
+  padding-top: 40px;
+  padding-left: 96px;
 }
 
 .person_label {
@@ -569,7 +681,7 @@ a:hover {
 }
 
 .text_info {
-  padding-top: 44px;
+  padding-top: 52px;
   padding-left: 20px;
   font-weight: bold;
   font-size: 20px;
@@ -623,10 +735,22 @@ a:hover {
   padding-top: 10px;
 }
 
+.person_label-second {
+  box-sizing: border-box;
+  width: 388px;
+  height: 354px;
+  border: 1px solid #191A23;
+  border-radius: 45px;
+  background-color: #FFFFFF;
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-right: 35px;
+}
+
 .second_team_labels {
   display: flex;
   padding-top: 40px;
-  padding-left: 80px;
+  padding-left: 96px;
 }
 
 .emily_descr {
@@ -644,10 +768,10 @@ a:hover {
 }
 
 .sarah_descr {
-  width: 328px;
+  width: 318px;
   height: 116px;
   font-size: 18px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .all_team_button {
@@ -657,9 +781,9 @@ a:hover {
   width: 270px;
   height: 68px;
   margin-top: 40px;
-  margin-left: 1058px;
+  margin-left: 1066px;
   background-color: #191A23;
-  border-radius: 20px;
+  border-radius: 14px;
   font-weight: 400;
   font-size: 20px;
   color: white;
@@ -668,11 +792,13 @@ a:hover {
 
 .testim_label {
   display: flex;
-  margin-top: 100px;
-  margin-left: 80px;
+  margin-top: 58px;
+  margin-left: 96px;
 }
 
 .testim_btn {
+  font-family: Space-Grotesk-Variable;
+  font-weight: 500;
   width: 256px;
   height: 52px;
   background-color: #B9FF66;
@@ -685,12 +811,12 @@ a:hover {
 
 .bg_lab {
   display: flex;
-  width: 1260px;
+  width: 1240px;
   height: 626px;
   background-color: #191A23;
   border-radius: 45px;
-  margin-top: 80px;
-  margin-left: 80px;
+  margin-top: 40px;
+  margin-left: 96px;
   position: relative;
 }
 
@@ -698,10 +824,10 @@ a:hover {
   display: block;
   position: relative;
   width: 606px;
-  height: 266px;
+  height: 280px;
   color: #FFFFFF;
-  margin-left: 362px;
-  margin-top: 84px;
+  margin-left: 310px;
+  margin-top: 80px;
   border: 2px solid #B9FF66;
   border-radius: 45px;
   background-color: #191A23;
@@ -758,18 +884,21 @@ a:hover {
 }
 
 .descr_img {
-  width: 610px;
+  width: 564px;
   height: 30px;
-  padding-top: 50px;
+  padding-left: 20px;
+  padding-top: 40px;
 }
 
 .contact_label {
   display: flex;
-  margin-top: 140px;
-  margin-left: 80px;
+  margin-top: 100px;
+  margin-left: 96px;
 }
 
 .contact_button {
+  font-family: Space-Grotesk-Variable;
+  font-weight: 500;
   width: 216px;
   height: 52px;
   background-color: #B9FF66;
@@ -783,17 +912,22 @@ a:hover {
   width: 324px;
   height: 46px;
   font-size: 18px;
-  margin-left: 40px;
+  margin-left: 38px;
   align-self: center;
+  margin-bottom: 12px;
 }
 
 .contact_bg {
   width: 1240px;
   height: 774px;
   background-color: #F3F3F3;
-  margin-top: 80px;
-  margin-left: 80px;
+  margin-top: 32px;
+  margin-left: 96px;
   border-radius: 45px;
+}
+
+.buttons_descr {
+  font-size: 18px;
 }
 
 .contact_blocks {
@@ -821,7 +955,7 @@ a:hover {
 }
 
 .first_input_label {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .first_button_label {
@@ -829,7 +963,7 @@ a:hover {
   height: 68px;
   background-color: #191A23;
   border-radius: 14px;
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
 .first_button_label a p {
@@ -846,9 +980,9 @@ a:hover {
 
 .last_section {
   width: 1242px;
-  height: 564px;
-  margin-left: 80px;
-  margin-top: 140px;
+  height: 514px;
+  margin-left: 96px;
+  margin-top: 144px;
   background-color: #191A23;
   border-radius: 45px;
 }
@@ -857,10 +991,9 @@ a:hover {
   width: 1122px;
   height: 30px;
   display: flex;
-  padding-left: 60px;
+  padding-left: 50px;
   padding-top: 56px;
   align-items: center;
-  justify-content: space-around;
 }
 
 .last_navigation ul {
@@ -868,7 +1001,7 @@ a:hover {
   height: 24px;
   display: flex;
   list-style: none;
-  margin-left: 100px;
+  margin-left: 120px;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 22px;
@@ -880,7 +1013,7 @@ a:hover {
   display: flex;
   width: 1120px;
   height: 186px;
-  margin-top: 66px;
+  margin-top: 44px;
   margin-left: 60px;
 }
 
@@ -914,6 +1047,15 @@ a:hover {
   margin-top: 20px;
 }
 
+.fourth_p {
+  width: 294px;
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
 .first_last_contact pre {
   width: 332px;
   height: 46px;
@@ -925,8 +1067,9 @@ a:hover {
 .second_last_contact {
   display: flex;
   width: 634px;
-  height: 210px;
+  height: 184px;
   background-color: #292A32;
+  margin-top: 20px;
   margin-left: 154px;
   border-radius: 14px;
   padding: 60px 40px;
@@ -942,6 +1085,7 @@ a:hover {
   padding-left: 36px;
   box-sizing: border-box;
   color: #FFFFFF;
+  font-size: 18px;
 }
 
 .second_last_contact a {
@@ -960,7 +1104,7 @@ a:hover {
   width: 1120px;
   height: 78px;
   border-top: 1px solid #FFFFFF;
-  margin-top: 90px;
+  margin-top: 68px;
   margin-left: 60px;
   position: relative;
 }
@@ -968,14 +1112,22 @@ a:hover {
 .last_descr span {
   box-sizing: border-box;
   position: absolute;
-  padding-top: 50px;
+  padding-top: 52px;
   color: #FFFFFF;
+  font-size: 18px;
 }
 
 .last_descr a {
   box-sizing: border-box;
   position: absolute;
-  padding-top: 50px;
+  padding-top: 52px;
   padding-left: 364px;
   color: #FFFFFF;
+  font-size: 18px;
+}
+
+.last_logo {
+  width: 180px;
+  height: 30px;
+  margin-left: 6px;
 }/*# sourceMappingURL=style.css.map */
