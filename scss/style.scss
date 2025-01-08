@@ -60,7 +60,9 @@ body {
     background-color: black;
     transition: transform 0.3s, opacity 0.3s;
 }
-
+.burger_menu:checked ~ .burger_menu span {
+    
+}
 .main_navigation img {
     width: 220px;
     height: 56px;
