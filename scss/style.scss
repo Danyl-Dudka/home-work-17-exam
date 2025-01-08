@@ -60,9 +60,6 @@ body {
     background-color: black;
     transition: transform 0.3s, opacity 0.3s;
 }
-.burger_menu:checked ~ .burger_menu span {
-    
-}
 .main_navigation img {
     width: 220px;
     height: 56px;
@@ -1298,7 +1295,7 @@ a:hover {
 
     .main_info {
         position: absolute;
-        right: -30px;
+        right: -56px;
         top: 140px;
     }
 
